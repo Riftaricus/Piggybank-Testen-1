@@ -1,0 +1,495 @@
+{
+	"id": "dd526d5d-942c-4053-9ef2-159e4b47725f",
+	"name": "My Collection",
+	"timestamp": "2026-11-03T15:20:15.255Z",
+	"collection_id": "58430301-fb4d02fa-e8d9-4bb5-981b-88b7258e8af1",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 25,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-11-03T15:20:14.762Z",
+	"totalFail": 10,
+	"results": [
+		{
+			"id": "b587db70-0c3a-4f51-a729-88085d46d0ad",
+			"name": "Overmaken-1",
+			"url": "http://localhost:8080/api/v1/transactions",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "75a3c16e-4fda-4590-8e18-d573eba05b47",
+			"name": "Overmaken-2",
+			"url": "http://localhost:8080/api/v1/transactions",
+			"time": 6,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Response status code is 500": true,
+				"Response has the required fields": true,
+				"Timestamp must be in a valid date format": false,
+				"Status is of type integer": true,
+				"Error message should not be empty when status indicates failure": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 500": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Timestamp must be in a valid date format": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status is of type integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message should not be empty when status indicates failure": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Response status code is 500": true,
+					"Response has the required fields": true,
+					"Timestamp must be in a valid date format": false,
+					"Status is of type integer": true,
+					"Error message should not be empty when status indicates failure": false
+				}
+			]
+		},
+		{
+			"id": "61fb723a-8e1b-4c4a-967b-39d9213f04aa",
+			"name": "Overmaken-3",
+			"url": "http://localhost:8080/api/v1/transactions",
+			"time": 5,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Response status code is 500": true,
+				"Response contains required fields": true,
+				"Status is a number indicating an error": true,
+				"Error message must be a non-empty string": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 500": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status is a number indicating an error": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message must be a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Response status code is 500": true,
+					"Response contains required fields": true,
+					"Status is a number indicating an error": true,
+					"Error message must be a non-empty string": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "428a12ae-199e-4e81-a930-5a6091b77202",
+			"name": "Overmaken-4",
+			"url": "http://localhost:8080/api/v1/transactions",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8da33f85-36dc-4eb9-9e3e-3c8ddda89583",
+			"name": "Overmaken-5",
+			"url": "http://localhost:8080/api/v1/transactions",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 or 201": true,
+				"Response time is less than 2000ms": true,
+				"Response is JSON": false,
+				"Sender account ID matches request": false,
+				"Receiver account ID matches request": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200 or 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is JSON": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Sender account ID matches request": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Receiver account ID matches request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 200 or 201": true,
+					"Response time is less than 2000ms": true,
+					"Response is JSON": false,
+					"Sender account ID matches request": false,
+					"Receiver account ID matches request": false
+				}
+			]
+		},
+		{
+			"id": "3d53b3e5-ff6b-49c7-8558-56c4ba08a612",
+			"name": "Account-Instellingen-1",
+			"url": "http://localhost:8080/api/v1/accounts",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d8235be2-7edf-4e7a-b46e-1fd02a4af3f9",
+			"name": "Account-Instellingen-2",
+			"url": "http://localhost:8080/api/v1/accounts",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "3ebd3b1a-f983-45fd-b263-c8a57e36724e",
+			"name": "Login-1",
+			"url": "http://localhost:8080/api/v1/accounts",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields: balance, name, and id": true,
+				"Balance must be a non-negative number": false,
+				"Name is a non-empty string": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields: balance, name, and id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Balance must be a non-negative number": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Name is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields: balance, name, and id": true,
+					"Balance must be a non-negative number": false,
+					"Name is a non-empty string": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "df65ae8b-5104-4f00-b5f8-06a6eec3a0bf",
+			"name": "Data-Inzien-1",
+			"url": "http://localhost:8080/api/v1/accounts",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": false,
+				"Response has the required fields: balance, name, and id": true,
+				"Balance is a non-negative number": false,
+				"Name must be a non-empty string": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required fields: balance, name, and id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Balance is a non-negative number": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Name must be a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Response status code is 200": false,
+					"Response has the required fields: balance, name, and id": true,
+					"Balance is a non-negative number": false,
+					"Name must be a non-empty string": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "7720db54-ffe5-4236-a9af-01b3396f7c2c",
+			"name": "Data-Inzien-2",
+			"url": "http://localhost:8080/api/v1/accounts",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields: balance, name, and id": true,
+				"Balance must be a non-negative number": false,
+				"Name must be a non-empty string": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields: balance, name, and id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Balance must be a non-negative number": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Name must be a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields: balance, name, and id": true,
+					"Balance must be a non-negative number": false,
+					"Name must be a non-empty string": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "1ebaffbc-cb71-4dc1-aef6-eae68900b8b3",
+			"name": "Data-Inzien-3",
+			"url": "http://localhost:8080/api/v1/accounts",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields: balance, name, and id": true,
+				"Balance must be a non-negative number": false,
+				"Name must be a non-empty string": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields: balance, name, and id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Balance must be a non-negative number": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Name must be a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields: balance, name, and id": true,
+					"Balance must be a non-negative number": false,
+					"Name must be a non-empty string": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 47,
+	"collection": {
+		"requests": [
+			{
+				"id": "b587db70-0c3a-4f51-a729-88085d46d0ad",
+				"method": "POST"
+			},
+			{
+				"id": "75a3c16e-4fda-4590-8e18-d573eba05b47",
+				"method": "POST"
+			},
+			{
+				"id": "61fb723a-8e1b-4c4a-967b-39d9213f04aa",
+				"method": "POST"
+			},
+			{
+				"id": "428a12ae-199e-4e81-a930-5a6091b77202",
+				"method": "POST"
+			},
+			{
+				"id": "8da33f85-36dc-4eb9-9e3e-3c8ddda89583",
+				"method": "POST"
+			},
+			{
+				"id": "3d53b3e5-ff6b-49c7-8558-56c4ba08a612",
+				"method": "PUT"
+			},
+			{
+				"id": "d8235be2-7edf-4e7a-b46e-1fd02a4af3f9",
+				"method": "PUT"
+			},
+			{
+				"id": "3ebd3b1a-f983-45fd-b263-c8a57e36724e",
+				"method": "GET"
+			},
+			{
+				"id": "df65ae8b-5104-4f00-b5f8-06a6eec3a0bf",
+				"method": "GET"
+			},
+			{
+				"id": "7720db54-ffe5-4236-a9af-01b3396f7c2c",
+				"method": "GET"
+			},
+			{
+				"id": "1ebaffbc-cb71-4dc1-aef6-eae68900b8b3",
+				"method": "GET"
+			}
+		]
+	}
+}
