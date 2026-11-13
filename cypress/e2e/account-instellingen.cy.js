@@ -1,5 +1,5 @@
-describe('Overboeken geld', () => {
-    it('shows a success message', () => {
+describe('Accountnaam veranderen naar een andere naam', () => {
+    it('shows a success message & name is actually changed', () => {
         cy.visit('http://localhost:3001')
         cy.get('.login__account').contains('Melvin').click()
         cy.contains('Instellingen').click()
@@ -18,8 +18,8 @@ describe('Overboeken geld', () => {
     })
 })
 
-describe('Overboeken geld', () => {
-    it('shows a success message', () => {
+describe('Accountnaam veranderen naar niets', () => {
+    it('shows a failure message', () => {
         cy.visit('http://localhost:3001')
         cy.get('.login__account').contains('Melvin').click()
         cy.contains('Instellingen').click()
